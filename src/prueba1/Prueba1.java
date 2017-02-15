@@ -6,6 +6,8 @@
 package prueba1;
 
 import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import javax.swing.JButton;
@@ -30,6 +32,14 @@ public class Prueba1 {
                                                System.exit(0);
                                         }
                                    } );
+        
+        b1.addActionListener(  new ActionListener(){
+                                    @Override
+                                     public void actionPerformed(ActionEvent e) {
+                                        System.exit(0);
+                                    }
+                              });
+        
         
         v1.setSize(300,200);
         v1.setLayout(new FlowLayout());
